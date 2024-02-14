@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    #    - include_tasks: tasks/brew.yaml
+    - include_tasks: tasks/fish.yaml
+    - include_tasks: tasks/nvim.yaml
