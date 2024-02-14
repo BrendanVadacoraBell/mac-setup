@@ -1,0 +1,9 @@
+- name: Apply nvim config
+  ansible.builtin.git:
+    repo: git@github.com:BrendanVadacoraBell/nvimrc.git
+    dest: "{{ lookup('env', 'HOME') }}/.config/nvim"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: main
+    force: true

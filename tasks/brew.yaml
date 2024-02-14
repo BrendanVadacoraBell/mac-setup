@@ -1,0 +1,40 @@
+- name: Install homebrew
+  shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+- name: Install UI applications
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  ignore_errors: true
+  loop:
+      - "kitty"
+      - "slack"
+      - "alfred"
+      - "zoom"
+      - "dash@6.4.3"
+      - "rectangle"
+      - "visual-studio-code"
+      - "handbrake"
+      - "clickup"
+      - "discord"
+      - "plexamp"
+      - "figma"
+
+- name: Install cli tools
+  community.general.homebrew:
+    name: "{{ item }}"
+  ignore_errors: true
+  loop:
+      - "aria2"
+      - "bat"
+      - "neovim"
+      - "starship"
+      - "jq"
+      - "treesitter"
+      - "fd"
+      - "fish"
+      - "fzf"
+      - "mas"
+      - "asdf"
+      - "stow"
+      - "blackhole-16ch"
+

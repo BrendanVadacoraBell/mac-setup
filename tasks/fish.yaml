@@ -1,0 +1,20 @@
+- name: Register fish
+  shell: sudo echo /usr/local/bin/fish >> /etc/shells
+  become: true
+
+- name: Set fish as default shell
+  shell: chsh -s /usr/local/bin/fish
+
+- name: Install fisher
+  shell: fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
+
+- name: Install fisher plugins
+  shell: fish -c "fisher install {{ item }}"
+  with_items:
+    - jethrokuan/z
+    - PatrickF1/fzf.fish
+    - franciscolourenco/done
+    - meaningful-ooo/sponge
+    - patrickf1/colored_man_pages.fish
+    - axkirillov/tokyonight-fish
+    - mattgreen/jump.fish
