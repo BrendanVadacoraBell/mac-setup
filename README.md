@@ -18,3 +18,20 @@ pariticular setup are:
 - [geerlingguy's mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook/tree/master)
 - [TalkingQuickly's ansible-osx-setup](https://github.com/TalkingQuickly/ansible-osx-setup)
 
+### Running
+
+There is a helper script that will coordinate the various facets of setting up a mac, e.g.
+command line tools, pip, ansible.
+
+The script assumes the environment is ready to run ansible:
+
+```
+./bin/boostrap.sh
+```
+
+If other things need to be installed, there are options that can be combined for a full install: e.g
+The following will install command-line-tools, pip, and ansible before running the ansible playbook.
+
+```
+./bin/boostrap.sh -c -p -a # -cpa
+```
