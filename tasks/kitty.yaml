@@ -1,0 +1,9 @@
+- name: Load dotfiles
+  ansible.builtin.git:
+    repo: git@github.com:BrendanVadacoraBell/kittyrc.git
+    dest: "{{ lookup('env', 'HOME') }}/.config/kitty"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: main
+    force: true
