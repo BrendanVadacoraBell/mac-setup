@@ -5,6 +5,16 @@
 - name: Set fish as default shell
   shell: chsh -s /opt/homebrew/bin/fish
 
+- name: Load dotfiles
+  ansible.builtin.git:
+    repo: git@github.com:BrendanVadacoraBell/fishrc.git
+    dest: "{{ lookup('env', 'HOME') }}/.config/fish"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: main
+    force: true
+
 - name: Install fisher
   shell: fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
 
