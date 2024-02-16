@@ -1,9 +1,9 @@
 - name: Register fish
-  shell: sudo echo /usr/local/bin/fish >> /etc/shells
+  shell: sudo echo /opt/homebrew/bin/fish >> /etc/shells
   become: true
 
 - name: Set fish as default shell
-  shell: chsh -s /usr/local/bin/fish
+  shell: chsh -s /opt/homebrew/bin/fish
 
 - name: Install fisher
   shell: fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
