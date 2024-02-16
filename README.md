@@ -41,3 +41,4 @@ The following will install command-line-tools, pip, and ansible before running t
 ### 2024-02-16
 - Add fish dotfile step to load existing configuration into a new installation of fish.
 - Add kitty dotfile step to load existing configuration into a new installation of kitty.
+- Fix fish default shell path to prevent kitty from not fully loading fish on startup.
