@@ -18,6 +18,7 @@
       - "discord"
       - "plexamp"
       - "figma"
+      - "obsidian"
 
 - name: Install cli tools
   community.general.homebrew:
