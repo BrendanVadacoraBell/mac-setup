@@ -30,7 +30,7 @@
       - "neovim"
       - "starship"
       - "jq"
-      - "treesitter"
+      - "tree-sitter"
       - "fd"
       - "fish"
       - "fzf"
