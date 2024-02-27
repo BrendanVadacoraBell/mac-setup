@@ -38,6 +38,9 @@ The following will install command-line-tools, pip, and ansible before running t
 
 ## Changelog
 
+### 2024-02-27
+- Add [Obsidian](https://github.com/epwalsh/obsidian.nvim) cask as it has become the defacto markdown viewer.
+- Fix incorrect package name for tree-sitter.
 ### 2024-02-16
 - Add fish dotfile step to load existing configuration into a new installation of fish.
 - Add kitty dotfile step to load existing configuration into a new installation of kitty.
