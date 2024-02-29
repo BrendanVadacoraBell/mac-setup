@@ -38,6 +38,8 @@ The following will install command-line-tools, pip, and ansible before running t
 
 ## Changelog
 
+### 2024-02-29
+- Add [tldr](https://github.com/tldr-pages/tldr) cli tool for quick docs on other cli tools
 ### 2024-02-27
 - Add [Obsidian](https://github.com/epwalsh/obsidian.nvim) cask as it has become the defacto markdown viewer.
 - Fix incorrect package name for tree-sitter.
