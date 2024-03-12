@@ -38,6 +38,11 @@ The following will install command-line-tools, pip, and ansible before running t
 
 ## Changelog
 
+### 2024-03-12
+- Add [asdf](https://asdf-vm.com/) basic installation of nodejs
+- Add nerd font installation for [starship](https://starship.rs/#prerequisites)
+- Fix [tldr](https://tldr.sh/) installation typo
+
 ### 2024-02-29
 - Add [tldr](https://github.com/tldr-pages/tldr) cli tool for quick docs on other cli tools
 ### 2024-02-27

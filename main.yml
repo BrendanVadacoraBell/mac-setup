@@ -4,3 +4,4 @@
     - include_tasks: tasks/fish.yaml
     - include_tasks: tasks/nvim.yaml
     - include_tasks: tasks/kitty.yaml
+    - include_tasks: tasks/asdf.yaml

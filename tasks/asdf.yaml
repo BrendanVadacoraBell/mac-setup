@@ -1,0 +1,7 @@
+---
+
+- name: Install nodejs plugin
+  shell: asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+- name: Install lastest stable node
+  shell: asdf install nodejs latest
