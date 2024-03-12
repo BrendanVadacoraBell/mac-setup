@@ -1,6 +1,10 @@
 - name: Install homebrew
   shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+- name: Tap a Homebrew repository, state present
+  community.general.homebrew_tap:
+    name: Homebrew/cask-fonts
+
 - name: Install UI applications
   community.general.homebrew_cask:
     name: "{{ item }}"
@@ -19,6 +23,7 @@
       - "plexamp"
       - "figma"
       - "obsidian"
+      - "font-hack-nerd-font"
 
 - name: Install cli tools
   community.general.homebrew:
