@@ -38,6 +38,9 @@ The following will install command-line-tools, pip, and ansible before running t
 
 ## Changelog
 
+### 2024-04-02
+- Add [Aerospace](https://github.com/nikitabobko/AeroSpace) to brew cask task and create aerospace task to load dotfiles.
+
 ### 2024-03-12
 - Add [asdf](https://asdf-vm.com/) basic installation of nodejs
 - Add nerd font installation for [starship](https://starship.rs/#prerequisites)
