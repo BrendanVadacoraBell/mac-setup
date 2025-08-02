@@ -38,6 +38,9 @@ The following will install command-line-tools, pip, and ansible before running t
 
 ## Changelog
 
+### 2025-08-02
+- Add [tmux](https://github.com/tmux/tmux/wiki) to brew task and create tmux task to load dotfiles.
+
 ### 2024-04-02
 - Add [Aerospace](https://github.com/nikitabobko/AeroSpace) to brew cask task and create aerospace task to load dotfiles.
 

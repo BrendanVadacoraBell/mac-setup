@@ -1,0 +1,9 @@
+- name: Apply tmux config
+  ansible.builtin.git:
+    repo: git@github.com:BrendanVadacoraBell/tmuxrc.git
+    dest: "{{ lookup('env', 'HOME') }}/.config/tmux"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: main
+    force: true
